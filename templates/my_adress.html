@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<h3>Мої адреси</h3>
+<table class="table-hover">
+    <thead>
+        <tr>
+            <th>Ім'я</th>
+            <th>Пошта</th>
+            <th>Телефон</th>
+
+        </tr>
+
+    </thead>
+{% for x in dname %}
+    <tr>
+
+        {% for z in x.values() %}
+        <td>{{ z }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+</div>
+{% endblock %}
